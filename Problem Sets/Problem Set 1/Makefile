@@ -5,8 +5,8 @@ NVCC=nvcc
 # locations on most linux distros #
 ###################################
 
-OPENCV_LIBPATH=/usr/lib
-OPENCV_INCLUDEPATH=/usr/include
+# OPENCV_LIBPATH=/usr/lib
+# OPENCV_INCLUDEPATH=/usr/include
 
 ###################################################
 # On Macs the default install locations are below #
@@ -20,9 +20,14 @@ OPENCV_INCLUDEPATH=/usr/include
 #OPENCV_LIBPATH=/opt/local/lib
 #OPENCV_INCLUDEPATH=/opt/local/include
 
+# using homebrew
+
+OPENCV_LIBPATH=/usr/local/lib
+OPENCV_INCLUDEPATH=/usr/local/include
+
 OPENCV_LIBS=-lopencv_core -lopencv_imgproc -lopencv_highgui
 
-CUDA_INCLUDEPATH=/usr/local/cuda-5.0/include
+CUDA_INCLUDEPATH=/usr/local/cuda/include
 
 ######################################################
 # On Macs the default install locations are below    #
